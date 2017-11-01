@@ -1,0 +1,74 @@
+body{
+	margin: 0 3%;
+}
+.container{
+	margin: auto;
+	font-family: sans-serif;
+	
+	.banner{
+		.overlay{
+			height: auto;
+			width: 100%;
+			.header{
+				font-size: 32px;
+				font-weight: bold;
+				@media(screen and max-width: 646px){
+					text-align: center;	
+				}
+				.logo{
+					display: inline-block;
+					width: 20%;
+					@media(screen and max-width: 646px){
+						width: 50%;
+						margin: auto;
+						display: block;
+					}
+					img{
+						width: 100%;
+						height: auto;
+					}
+					padding: $sm-spacing;
+				}
+				.tm{
+					float: right;
+					display: inline-block;
+					margin: auto;
+					color: #666;
+					padding-top: 50px;
+					@media(screen and max-width: 646px){
+						float: none;
+						font-size: 1em;
+						padding-bottom: $sm-spacing;
+					}
+				}
+			}
+		}
+		img{
+			width: 100%;
+			height: auto;
+			margin-bottom: -$sm-spacing;
+		}
+		.contact{
+			text-align: center;
+			padding: $md-spacing;
+			background-color: $blue;
+			color: $text-color;
+			font-size: 18px;
+			div{
+				display: inline-block;
+				padding: $md-spacing $md-spacing;
+			}
+			a{
+				color: $text-color;
+				text-decoration: none;
+			}
+			a:hover{
+				color: $text-color;
+			}
+		}
+	}
+	.enquiries{
+		margin-top: $md-spacing;
+		text-align: center;
+	}
+}
